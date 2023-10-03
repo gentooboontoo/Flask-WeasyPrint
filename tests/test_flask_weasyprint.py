@@ -57,7 +57,7 @@ def test_pdf(url, filename, automatic, cookie):
     if url.endswith('.pdf'):
         client = app.test_client()
         if cookie:
-            client.set_cookie('', 'cookie', cookie)
+            client.set_cookie('cookie', cookie)
         response = client.get('/foo.pdf')
     else:
         with app.test_request_context('/foo/'):

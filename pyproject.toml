@@ -12,7 +12,7 @@ requires-python = '>=3.7'
 readme = {file = 'README.rst', content-type = 'text/x-rst'}
 license = {file = 'LICENSE'}
 dependencies = [
-  'flask >=2.0.0',
+  'flask >=3.0.0',
   'weasyprint >=43.0',
 ]
 classifiers = [
